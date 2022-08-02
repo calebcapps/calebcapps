@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>401f9ef7-6a84-4b98-9758-821f2a851588</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>example_pyFirmata-DigitalRead .py</StartupFile>
+    <StartupFile>example_pyFirmata-Servo.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="example_pyFirmata-Servo.py" />
     <Compile Include="example_pyFirmata-DigitalRead .py" />
     <Compile Include="Intro_to_Pyfirmata.py" />
   </ItemGroup>

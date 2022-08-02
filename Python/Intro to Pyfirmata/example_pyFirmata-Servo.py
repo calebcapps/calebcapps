@@ -4,20 +4,20 @@
 # Post-condition:   version number is displayed on screen, and True or False is printed to reflect if
 #                   the button is pushed or not respectively
 
-from pyfirmata import Arduino, util
+from pyfirmata import Arduino, SERVO, util
 from time import sleep
 
 board = Arduino("COM6") # Set this to the corresponding COM port from the Arduino IDE
 
 print("Running pyFirmata version " + str(board.get_firmata_version())) #Show firmata version
 
-it = util.Iterator(board)
-it.start()
+board.digital[11].mode = SERVO
 
-button = board.get_pin('d:11:i')
+def rotateServo(pin, angle):
+    board.digital[pin].write(angle)
+    sleep(0.015) # short delay, not sure why this is necessary
 
-sleep(1)
-button.enable_reporting
-while(1):
-    print(button.read())
-    sleep(0.25)
+
+while True:
+    x=input("angle:\t")
+    rotateServo(11, float(x))
