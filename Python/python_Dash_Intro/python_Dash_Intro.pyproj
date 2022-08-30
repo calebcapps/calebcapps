@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0f6cee4c-c1bc-4c5d-bdef-b33219dfdafe</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>python_Dash_Intro.py</StartupFile>
+    <StartupFile>python_Dash_Intro-V2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,15 +21,25 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="pages.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="More Examples\UpdatingGraph.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="python_Dash_Intro-V2.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="More Examples\DataMap.py" />
     <Compile Include="More Examples\HelloWorld.py" />
     <Compile Include="More Examples\InteractiveApp.py" />
     <Compile Include="More Examples\SimpleButton.py" />
     <Compile Include="More Examples\SimpleSidebar.py" />
-    <Compile Include="python_Dash_Intro.py" />
+    <Compile Include="Stable Versions\python_Dash_Intro-V1.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="More Examples\" />
+    <Folder Include="Stable Versions\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
