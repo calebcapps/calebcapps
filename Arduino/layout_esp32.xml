@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<board>
+    <gpio><!-- GPIO defines a digital input or output-->
+        <!-- note: maximum source or sink must not exceed 3.3V @ 40mA max (20mA recommended)-->
+        <pin>
+            <id>0</id>
+            <status>null</status>
+        </pin>
+
+        <pin>
+            <id>2</id>
+            <status>null</status>
+        </pin>
+
+        <pin>
+            <id>4</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>5</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>6</id>
+            <status>null</status>
+        </pin>
+        
+        <pin>
+            <id>12</id>
+            <status>null</status>
+        </pin>
+        
+        <pin>
+            <id>13</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>14</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>15</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>16</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>17</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>18</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>19</id>
+            <status>null</status>
+        </pin>
+
+        <pin>
+            <id>21</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>22</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>23</id>
+            <status>null</status>
+        </pin>
+
+        <pin>
+            <id>25</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>26</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>27</id>
+            <status>null</status>
+        </pin>
+
+        <pin>
+            <id>32</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>33</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>34</id>
+            <status>null</status>
+        </pin>
+        <pin>
+            <id>35</id>
+            <status>null</status>
+        </pin>
+    </gpio>
+    <adc><!-- ADC defines an analog input using 9-12 bits of resolution-->
+        <!-- WARNING! maximum input voltage must not exceed 3.3V-->
+                    <!-- ADC 1 Channels-->
+        <pin><!-- ADC1 CH0-->
+            <channel>ADC1_0</channel>
+            <id>36</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- ADC1 CH3-->
+            <channel>ADC1_3</channel>
+            <id>39</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- ADC1 CH4-->
+            <channel>ADC1_4</channel>
+            <id>32</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- ADC1 CH5-->
+            <channel>ADC1_5</channel>
+            <id>33</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- ADC1 CH6-->
+            <channel>ADC1_6</channel>
+            <id>34</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- ADC1 CH7-->
+            <channel>ADC1_7</channel>
+            <id>35</id>
+            <status>null</status>
+        </pin>
+                    <!-- ADC 1 Channels-->
+        <pin><!-- ADC2 CH0-->
+            <channel>ADC2_0</channel>
+            <id>4</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- ADC2 CH2-->
+            <channel>ADC2_2</channel>
+            <id>2</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- ADC2 CH3-->
+            <channel>ADC2_3</channel>
+            <id>15</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- ADC2 CH4-->
+            <channel>ADC2_4</channel>
+            <id>13</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- ADC2 CH5-->
+            <channel>ADC2_5</channel>
+            <id>12</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- ADC2 CH6-->
+            <channel>ADC2_6</channel>
+            <id>14</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- ADC2 CH7-->
+            <channel>ADC2_7</channel>
+            <id>27</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- ADC2 CH8-->
+            <channel>ADC2_8</channel>
+            <id>25</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- ADC2 CH9-->
+            <channel>ADC2_9</channel>
+            <id>26</id>
+            <status>null</status>
+        </pin>
+    </adc>
+    <dac><!-- DAC defines an analog voltage output-->
+        <pin><!-- DAC1-->
+            <channel>DAC_1</channel>
+            <id>25</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- DAC2-->
+            <channel>DAC_2</channel>
+            <id>26</id>
+            <status>null</status>
+        </pin>
+    </dac>
+    <spi>
+        <pin><!-- clock-->
+            <channel>CLK</channel>
+            <id>14</id>
+            <!-- no status necessary for clock, only output waveform is used-->
+        </pin>
+        <pin><!-- Master Input Slave Output (MISO)-->
+            <channel>MISO</channel>
+            <id>12</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- Master Output Slave Input (MOSI)-->
+            <channel>MOSI</channel>
+            <id>13</id>
+            <status>null</status>
+        </pin>
+        <pin><!-- Chip Select (CS)-->
+            <channel>CS</channel>
+            <id>15</id>
+            <status>null</status>
+        </pin>
+        
+    </spi>
+
+
+</board>
