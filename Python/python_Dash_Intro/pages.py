@@ -10,7 +10,7 @@ extensions = ["/", "/Plot", "/Configure"]
 
 # data source: https://www.kaggle.com/chubak/iranian-students-from-1968-to-2017
 # data owner: Chubak Bidpaa
-df = pd.read_csv('https://raw.githubusercontent.com/Coding-with-Adam/Dash-by-Plotly/master/Bootstrap/Side-Bar/iranian_students.csv')
+#df = pd.read_csv('https://raw.githubusercontent.com/Coding-with-Adam/Dash-by-Plotly/master/Bootstrap/Side-Bar/iranian_students.csv')
 
 # padding for the page content
 CONTENT_STYLE = {
@@ -33,7 +33,7 @@ page_home = html.Div( [
         dcc.Graph(
             id='bargraph',
             figure=px.bar(
-                df, 
+                #df, 
                 barmode='group', 
                 x='Years', 
                 y=['Girls Kindergarten', 

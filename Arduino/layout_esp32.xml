@@ -210,7 +210,7 @@
             <id>13</id>
             <status>null</status>
         </pin>
-        <pin><!-- Chip Select (CS)-->
+        <pin id="CS"><!-- Chip Select (CS)-->
             <channel>CS</channel>
             <id>15</id>
             <status>null</status>

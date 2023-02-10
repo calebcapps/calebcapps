@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>0f6cee4c-c1bc-4c5d-bdef-b33219dfdafe</ProjectGuid>
+    <ProjectGuid>6f26f170-fdbd-4a47-b81d-5245cdc8c2c9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>More Examples\HelloWorld.py</StartupFile>
+    <StartupFile>Python_Dash_Communication_with_ESP32.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>python_Dash_Intro</Name>
-    <RootNamespace>python_Dash_Intro</RootNamespace>
+    <Name>Python Dash Communication with ESP32</Name>
+    <RootNamespace>Python Dash Communication with ESP32</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,25 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="pages.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="More Examples\UpdatingGraph.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="python_Dash_Intro-V2.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="More Examples\DataMap.py" />
-    <Compile Include="More Examples\HelloWorld.py" />
-    <Compile Include="More Examples\InteractiveApp.py" />
-    <Compile Include="More Examples\SimpleButton.py" />
-    <Compile Include="More Examples\SimpleSidebar.py" />
-    <Compile Include="Stable Versions\python_Dash_Intro-V1.py" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="More Examples\" />
-    <Folder Include="Stable Versions\" />
+    <Compile Include="Python_Dash_Communication_with_ESP32.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
