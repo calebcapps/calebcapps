@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6f26f170-fdbd-4a47-b81d-5245cdc8c2c9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Python_Dash_Communication_with_ESP32.py</StartupFile>
+    <StartupFile>Function Tests\example_device_addresser.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Function Tests\example_AP_communication_oneway.py" />
+    <Compile Include="Function Tests\example_device_addresser.py" />
     <Compile Include="Python_Dash_Communication_with_ESP32.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Function Tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Function Tests\addresser.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
