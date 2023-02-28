@@ -28,4 +28,4 @@ def displayClick(btn1, btn2, btn3):
     return html.Div(msg)
 
 if __name__ == '__main__':
-    app.run_server(host="127.0.0.1", port=1100)
+    app.run_server(host="127.0.0.1", port=8080)

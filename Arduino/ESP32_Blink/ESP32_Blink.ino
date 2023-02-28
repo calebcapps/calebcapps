@@ -8,8 +8,8 @@
   https://dronebotworkshop.com
 */
  
-// LED on GPIO2
-int ledPin = 19;
+// LED on GPIO2 is the builtin LED
+int ledPin = 2;
  
 void setup()
 {

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0f6cee4c-c1bc-4c5d-bdef-b33219dfdafe</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>More Examples\HelloWorld.py</StartupFile>
+    <StartupFile>More Examples\SimpleButton.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

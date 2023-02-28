@@ -102,14 +102,15 @@ int deref(const unsigned int haystack[], int needle, int span) {
 }
 
 void setup() {
+  pinMode(ONBOARD_LED, OUTPUT);
   for (int i = 0; i < DIGITAL_OUT_LEN; i++) { // setup output pins
     pinMode(DIGITAL_OUT[i], OUTPUT);
   }
   for (int i = 0; i < DIGITAL_OUT_LEN; i++) { // setup output pins
     pinMode(DIGITAL_IN[i], INPUT);
   }
-  for (int i = 0; i < SERVO_LEN; i++) {         // setup for servo pins
-    servo[i].setPeriodHertz(50);                // standard 50 hz servo        
+  for (int i = 0; i < SERVO_LEN; i++) {       // setup for servo pins
+    servo[i].setPeriodHertz(50);              // standard 50 hz servo        
     servo[i].attach(SERVO_PIN[i], us_min, us_max);
   }
 
@@ -133,7 +134,7 @@ void loop() {
 
 
     while (client.connected()) {
-
+      digitalWrite(ONBOARD_LED, HIGH); // set onboard LED HIGH while client is connected
       String str = webSocketServer.getData().c_str();
       char stream[str.length() + 1];
       str.toCharArray(stream, str.length() + 1);
@@ -146,7 +147,14 @@ void loop() {
     }
 
     Serial.println("The client disconnected");
+    digitalWrite(ONBOARD_LED, LOW); // set onboard LED LOW after client is disconnected
     delay(100);
+  }
+  else { // blink LED while waiting for client and setup is done
+    digitalWrite(ONBOARD_LED, HIGH);
+    delay(500);
+    digitalWrite(ONBOARD_LED, LOW);
+    delay(500);
   }
 
   delay(100);

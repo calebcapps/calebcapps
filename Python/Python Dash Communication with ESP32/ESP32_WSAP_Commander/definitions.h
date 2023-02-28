@@ -1,4 +1,5 @@
 //digital pin definitions
+#define ONBOARD_LED 2
 #define DIGITAL_OUT (int[]) {18, 19, 21} // define all pins used for digital output
 #define DIGITAL_IN (int[]) {} // define all pins used for digital input
 const unsigned int DIGITAL_OUT_LEN = sizeof(DIGITAL_OUT)/sizeof(int);  // elements in array
