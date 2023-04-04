@@ -9,12 +9,14 @@ ws = websocket.WebSocket()
 address = "ws://192.168.4.1/"
 ws.connect(address)
 
+# Build the web app
 app = Dash(__name__)
 
 app.layout = html.Div([
     daq.Knob(id='servo-knob', max = 180, value = 90, scale = {'interval':15}),
     html.Div(id='knob-result')
 ])
+
 
 
 @app.callback(Output('knob-result', 'children'), Input('servo-knob', 'value'))
