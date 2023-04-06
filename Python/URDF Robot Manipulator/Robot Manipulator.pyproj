@@ -22,13 +22,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="helper.py" />
     <Compile Include="Examples\Archive.py" />
     <Compile Include="Examples\Geometry Representation.py" />
     <Compile Include="Examples\Loading Geometry Loop.py" />
     <Compile Include="Robot_Manipulator.py" />
+    <Compile Include="test.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\" />
+    <Folder Include="assets\" />
     <Folder Include="Assets\concept-arm\" />
     <Folder Include="Assets\concept-arm\config\" />
     <Folder Include="Assets\concept-arm\launch\" />
@@ -38,7 +40,7 @@
     <Folder Include="Examples\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\ASM.SLDASM" />
+    <Content Include="assets\ASM.SLDASM" />
     <Content Include="Assets\concept-arm\CMakeLists.txt" />
     <Content Include="Assets\concept-arm\config\joint_names_concept-arm.yaml" />
     <Content Include="Assets\concept-arm\export.log" />
@@ -50,12 +52,13 @@
     <Content Include="Assets\concept-arm\package.xml" />
     <Content Include="Assets\concept-arm\urdf\concept-arm.csv" />
     <Content Include="Assets\concept-arm\urdf\concept-arm.urdf" />
-    <Content Include="Assets\J0.SLDPRT" />
-    <Content Include="Assets\J0.STL" />
-    <Content Include="Assets\J1.SLDPRT" />
-    <Content Include="Assets\J1.STL" />
-    <Content Include="Assets\J2.SLDPRT" />
-    <Content Include="Assets\J2.STL" />
+    <Content Include="assets\J0.SLDPRT" />
+    <Content Include="assets\J0.STL" />
+    <Content Include="assets\J1.SLDPRT" />
+    <Content Include="assets\J1.STL" />
+    <Content Include="assets\J2.SLDPRT" />
+    <Content Include="assets\J2.STL" />
+    <Content Include="assets\style.css" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

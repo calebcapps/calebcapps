@@ -10,22 +10,17 @@ import pyvista as pv
 import dash_daq as daq
 import os
 import webbrowser
+# Custom Python modules
+from helper import *
 
-daq_theme = {
-    # Copied from Darkly DBC theme
-    'primary':      '#375a7f',
-    'secondary':    '#444444',
-    'success':      '#00bc8c',
-    'info':         '#3498db',
-    'warning':      '#f39c12',
-    'danger':       '#e74c3c',
-    'light':        '#adb5bd',
-    'dark':         '#303030',
-    #daq specific
-    'detail':       '#375a7f',
-}
-knob_style = {
-    'fill':         daq_theme['light']
+
+# color pallette from Darkly theme (DBC)
+darkly_theme = get_css_theme("assets/style.css")
+daq_theme = {       # provides theme parameters to use for all daq components. Additional parameters must be specified in assets/style.css
+    'dark'      :   False,
+    'detail'    :   darkly_theme['success'],
+    'primary'   :   darkly_theme['primary'],
+    'secondary' :   darkly_theme['secondary']
 }
 
 # -----------------------------------------------------------------------------
@@ -34,39 +29,12 @@ knob_style = {
 app = Dash(__name__, external_stylesheets = [dbc.themes.DARKLY])    # Dash setup
 server = app.server
 
-IN2MM = 25.4 # inches to mm conversion, VTK and PyVista are in mm
-
 # -----------------------------------------------------------------------------
 # Populate the 3D view screen
 # -----------------------------------------------------------------------------
-root        =   "Assets/"
-fileType    =   ".stl"
-file_arr    =   ["J0", "J1"] # array of file names
-# NOTE: the number of origins, positions, orientations, and colors must match the number of files being used
-                #    J0           J1
-origin_arr  =   [(0*IN2MM, 0*IN2MM, 0*IN2MM), (0*IN2MM, 0*IN2MM, 0*IN2MM)]
-pos_arr     =   [(0*IN2MM, 0*IN2MM, 0*IN2MM), (0*IN2MM, 0*IN2MM, 0*IN2MM)] # array of positions (inches)
-orn_arr     =   [(0, 0, 0), (0, 0, 0)]  # array of orientations, stored as angles
-color_arr   =   [(0, 0, 1), (1, 0, 0)]  # array of colors for each component, values are 0-255/255 for maximum color intensity
-geometry    =   []                      # array to hold geometry representations
-
-# Create the geometry representation
-for i in range(0, len(file_arr)):
-    mesh = to_mesh_state(pv.read(root+file_arr[i]+fileType))
-    child = dash_vtk.GeometryRepresentation(
-        children = [
-            dash_vtk.Mesh(state=mesh)
-        ],
-        actor = {
-            "orientation": orn_arr[i],
-            "position": pos_arr[i],
-            "origin": origin_arr[i],
-        },
-        property = {
-            "color": color_arr[i]
-        },
-    )
-    geometry.append(child)
+J0 = model("J0", color = RGB["BLUE"])
+J1 = model("J1", color = RGB["RED"])
+geometry = get_model_geometry()
 
 # -----------------------------------------------------------------------------
 # Setup the over-arching page components
@@ -88,8 +56,7 @@ arm_controller = dbc.Card([
                 max = 180, 
                 value = 90, 
                 scale = {'interval':15},
-                #theme = daq_theme,
-                style = knob_style
+                color = daq_theme['detail']
             ),
             html.Div(id='knob-result1')  # set the ID that will be returned from the callback
         ]),
@@ -100,7 +67,6 @@ arm_controller = dbc.Card([
                 max = 180, 
                 value = 90, 
                 scale = {'interval':15},
-                color = daq_theme['primary']
             ),
             html.Div(id='knob-result2'), # set the ID that will be returned from the callback
         ]),
@@ -111,7 +77,6 @@ arm_controller = dbc.Card([
                 max = 180, 
                 value = 90, 
                 scale = {'interval':15},
-                color = daq_theme['primary']
             ),
             html.Div(id='knob-result3'), # set the ID that will be returned from the callback
         ])
@@ -126,13 +91,11 @@ def update_knob1(value):
     #ws.send(f'SERVO:{value},23') # send the command over websocket
     print(f'Servo angle: {value}'+u"\N{DEGREE SIGN}")
     return f'Servo angle: {value}'+u"\N{DEGREE SIGN}"
-
 @app.callback(Output('knob-result2', 'children'), Input('servo-knob2', 'value')) # callback for updating data via knob interaction
 def update_knob2(value):
     #ws.send(f'SERVO:{value},23') # send the command over websocket
     print(f'Servo angle: {value}'+u"\N{DEGREE SIGN}")
     return f'Servo angle: {value}'+u"\N{DEGREE SIGN}"
-
 @app.callback(Output('knob-result3', 'children'), Input('servo-knob3', 'value')) # callback for updating data via knob interaction
 def update_knob(value):
     #ws.send(f'SERVO:{value},23') # send the command over websocket
@@ -209,7 +172,6 @@ app.layout = dbc.Container([
     fluid=True,
     style={"height": "75vh"},
 )
-
 
 
 
