@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Caleb.Capps\source\repos\calebcapps\calebcapps\PCB\KiCad\RoMeo BLE Shield\RoMeo BLE Shield.kicad_sch</source>
+    <date>7/8/2022 12:52:58 PM</date>
+    <tool>Eeschema (6.0.6)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>RoMeo BLE Shield.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="A1">
+      <value>Arduino_UNO_R3</value>
+      <footprint>Module:Arduino_UNO_R3</footprint>
+      <datasheet>https://www.arduino.cc/en/Main/arduinoBoardUno</datasheet>
+      <libsource lib="MCU_Module" part="Arduino_UNO_R3" description="Arduino UNO Microcontroller Module, release 3"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RoMeo BLE Shield.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dad82ab9-16fc-4a6a-8071-aa15ad665e38</tstamps>
+    </comp>
+    <comp ref="BT1">
+      <value>Battery</value>
+      <libsource lib="Device" part="Battery" description="Multiple-cell battery"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RoMeo BLE Shield.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8b454a07-14e5-4e65-bad1-e7dba1a2f80b</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RoMeo BLE Shield.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77357b2a-69ba-4a85-a06d-50a724a60b93</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x06</value>
+      <footprint>Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RoMeo BLE Shield.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>097acec5-3887-474c-9cf4-89adbbbd7e5f</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x06</value>
+      <footprint>Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RoMeo BLE Shield.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3f345e01-9f0e-4352-8136-9f1f5d979c37</tstamps>
+    </comp>
+    <comp ref="M1">
+      <value>Stepper_Motor_bipolar</value>
+      <datasheet>http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0</datasheet>
+      <libsource lib="Motor" part="Stepper_Motor_bipolar" description="4-wire bipolar stepper motor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RoMeo BLE Shield.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b156336f-fb61-4b05-991f-3c3e2e7d29e9</tstamps>
+    </comp>
+    <comp ref="M2">
+      <value>N20 DC Motor</value>
+      <libsource lib="Adafruit Custom" part="N20 DC Motor" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RoMeo BLE Shield.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1fb80875-abd3-4f39-9841-342f7dd95336</tstamps>
+    </comp>
+    <comp ref="M3">
+      <value>N20 DC Motor</value>
+      <libsource lib="Adafruit Custom" part="N20 DC Motor" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RoMeo BLE Shield.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c1afe652-6a33-4fdb-9758-8cfe98ea7f49</tstamps>
+    </comp>
+    <comp ref="M4">
+      <value>Motor_Servo</value>
+      <datasheet>http://forums.parallax.com/uploads/attachments/46831/74481.png</datasheet>
+      <libsource lib="Motor" part="Motor_Servo" description="Servo Motor (Futaba, HiTec, JR connector)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RoMeo BLE Shield.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c8db915f-e78b-40a4-a31f-848ea02f1e82</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>DRV8833 Breakout</value>
+      <libsource lib="Adafruit Custom" part="DRV8833 Breakout" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RoMeo BLE Shield.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e532583a-0ae1-4fe3-a689-f4089ba05ba5</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>NXP_9DOF_Breakout</value>
+      <libsource lib="Adafruit Custom" part="NXP_9DOF_Breakout" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="RoMeo BLE Shield.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a555347a-29ed-4e8d-aad2-3c691961d827</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Adafruit Custom" part="DRV8833 Breakout">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DRV8833 Breakout</field>
+      </fields>
+      <pins>
+        <pin num="" name="AIN1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit Custom" part="N20 DC Motor">
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">N20 DC Motor</field>
+      </fields>
+      <pins>
+        <pin num="" name="C1" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit Custom" part="NXP_9DOF_Breakout">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">NXP_9DOF_Breakout</field>
+      </fields>
+      <pins>
+        <pin num="" name="3Vo" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery">
+      <description>Multiple-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Module" part="Arduino_UNO_R3">
+      <description>Arduino UNO Microcontroller Module, release 3</description>
+      <docs>https://www.arduino.cc/en/Main/arduinoBoardUno</docs>
+      <footprints>
+        <fp>Arduino*UNO*R3*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">Arduino_UNO_R3</field>
+        <field name="Footprint">Module:Arduino_UNO_R3</field>
+        <field name="Datasheet">https://www.arduino.cc/en/Main/arduinoBoardUno</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="IOREF" type="output"/>
+        <pin num="3" name="~{RESET}" type="input"/>
+        <pin num="4" name="3V3" type="power_out"/>
+        <pin num="5" name="+5V" type="power_out"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="VIN" type="power_in"/>
+        <pin num="9" name="A0" type="bidirectional"/>
+        <pin num="10" name="A1" type="bidirectional"/>
+        <pin num="11" name="A2" type="bidirectional"/>
+        <pin num="12" name="A3" type="bidirectional"/>
+        <pin num="13" name="SDA/A4" type="bidirectional"/>
+        <pin num="14" name="SCL/A5" type="bidirectional"/>
+        <pin num="15" name="D0/RX" type="bidirectional"/>
+        <pin num="16" name="D1/TX" type="bidirectional"/>
+        <pin num="17" name="D2" type="bidirectional"/>
+        <pin num="18" name="D3" type="bidirectional"/>
+        <pin num="19" name="D4" type="bidirectional"/>
+        <pin num="20" name="D5" type="bidirectional"/>
+        <pin num="21" name="D6" type="bidirectional"/>
+        <pin num="22" name="D7" type="bidirectional"/>
+        <pin num="23" name="D8" type="bidirectional"/>
+        <pin num="24" name="D9" type="bidirectional"/>
+        <pin num="25" name="D10" type="bidirectional"/>
+        <pin num="26" name="D11" type="bidirectional"/>
+        <pin num="27" name="D12" type="bidirectional"/>
+        <pin num="28" name="D13" type="bidirectional"/>
+        <pin num="29" name="GND" type="power_in"/>
+        <pin num="30" name="AREF" type="input"/>
+        <pin num="31" name="SDA/A4" type="bidirectional"/>
+        <pin num="32" name="SCL/A5" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Motor" part="Motor_Servo">
+      <description>Servo Motor (Futaba, HiTec, JR connector)</description>
+      <docs>http://forums.parallax.com/uploads/attachments/46831/74481.png</docs>
+      <footprints>
+        <fp>PinHeader*P2.54mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">Motor_Servo</field>
+        <field name="Datasheet">http://forums.parallax.com/uploads/attachments/46831/74481.png</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PWM" type="passive"/>
+        <pin num="2" name="+" type="passive"/>
+        <pin num="3" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Motor" part="Stepper_Motor_bipolar">
+      <description>4-wire bipolar stepper motor</description>
+      <docs>http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0</docs>
+      <footprints>
+        <fp>PinHeader*P2.54mm*Vertical*</fp>
+        <fp>TerminalBlock*</fp>
+        <fp>Motor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">Stepper_Motor_bipolar</field>
+        <field name="Datasheet">http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Adafruit Custom">
+      <uri>C:\Users\Caleb.Capps\source\repos\calebcapps\calebcapps\PCB\KiCad\Adafruit Custom\Adafruit Custom.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="MCU_Module">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/MCU_Module.kicad_sym</uri>
+    </library>
+    <library logical="Motor">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Motor.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.3V">
+      <node ref="M4" pin="2" pinfunction="+" pintype="passive"/>
+      <node ref="U1" pin="" pinfunction="SLP" pintype="input"/>
+      <node ref="U2" pin="" pinfunction="3Vo" pintype="input"/>
+    </net>
+    <net code="2" name="D4">
+      <node ref="A1" pin="19" pinfunction="D4" pintype="bidirectional"/>
+      <node ref="U1" pin="" pinfunction="AIN1" pintype="input"/>
+    </net>
+    <net code="3" name="D5">
+      <node ref="A1" pin="20" pinfunction="D5" pintype="bidirectional"/>
+      <node ref="U1" pin="" pinfunction="AIN2" pintype="input"/>
+    </net>
+    <net code="4" name="D6">
+      <node ref="A1" pin="21" pinfunction="D6" pintype="bidirectional"/>
+      <node ref="U1" pin="" pinfunction="BIN2" pintype="input"/>
+    </net>
+    <net code="5" name="D7">
+      <node ref="A1" pin="22" pinfunction="D7" pintype="bidirectional"/>
+      <node ref="U1" pin="" pinfunction="BIN1" pintype="input"/>
+    </net>
+    <net code="6" name="D9">
+      <node ref="A1" pin="24" pinfunction="D9" pintype="bidirectional"/>
+      <node ref="M4" pin="1" pinfunction="PWM" pintype="passive"/>
+    </net>
+    <net code="7" name="Earth">
+      <node ref="A1" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="BT1" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="M4" pin="3" pinfunction="-" pintype="passive"/>
+      <node ref="U1" pin="" pinfunction="GND" pintype="passive"/>
+      <node ref="U2" pin="" pinfunction="GND" pintype="input"/>
+    </net>
+    <net code="8" name="Net-(A1-Pad8)">
+      <node ref="A1" pin="8" pinfunction="VIN" pintype="power_in"/>
+      <node ref="BT1" pin="1" pinfunction="+" pintype="passive"/>
+    </net>
+    <net code="9" name="Net-(A1-Pad31)">
+      <node ref="A1" pin="31" pinfunction="SDA/A4" pintype="bidirectional"/>
+      <node ref="U2" pin="" pinfunction="SDA" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="Net-(A1-Pad32)">
+      <node ref="A1" pin="32" pinfunction="SCL/A5" pintype="bidirectional"/>
+      <node ref="U2" pin="" pinfunction="SCL" pintype="input"/>
+    </net>
+    <net code="11" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="M1" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="U1" pin="" pinfunction="BOUT1" pintype="output"/>
+    </net>
+    <net code="12" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="M1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="" pinfunction="BOUT2" pintype="output"/>
+    </net>
+    <net code="13" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="M1" pin="3" pintype="passive"/>
+      <node ref="U1" pin="" pinfunction="AOUT2" pintype="output"/>
+    </net>
+    <net code="14" name="Net-(J1-Pad4)">
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="M1" pin="4" pintype="passive"/>
+      <node ref="U1" pin="" pinfunction="AOUT1" pintype="output"/>
+    </net>
+    <net code="15" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="M2" pin="" pinfunction="M1" pintype="input"/>
+    </net>
+    <net code="16" name="Net-(J2-Pad2)">
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="M2" pin="" pinfunction="GND" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(J2-Pad3)">
+      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="M2" pin="" pinfunction="C1" pintype="output"/>
+    </net>
+    <net code="18" name="Net-(J2-Pad4)">
+      <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="M2" pin="" pinfunction="C2" pintype="output"/>
+    </net>
+    <net code="19" name="Net-(J2-Pad5)">
+      <node ref="J2" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="M2" pin="" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="20" name="Net-(J2-Pad6)">
+      <node ref="J2" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="M2" pin="" pinfunction="M2" pintype="input"/>
+    </net>
+    <net code="21" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="M3" pin="" pinfunction="M1" pintype="input"/>
+    </net>
+    <net code="22" name="Net-(J3-Pad2)">
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="M3" pin="" pinfunction="GND" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(J3-Pad3)">
+      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="M3" pin="" pinfunction="C1" pintype="output"/>
+    </net>
+    <net code="24" name="Net-(J3-Pad4)">
+      <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="M3" pin="" pinfunction="C2" pintype="output"/>
+    </net>
+    <net code="25" name="Net-(J3-Pad5)">
+      <node ref="J3" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="M3" pin="" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="26" name="Net-(J3-Pad6)">
+      <node ref="J3" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="M3" pin="" pinfunction="M2" pintype="input"/>
+    </net>
+    <net code="27" name="unconnected-(A1-Pad1)">
+      <node ref="A1" pin="1" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(A1-Pad2)">
+      <node ref="A1" pin="2" pinfunction="IOREF" pintype="output"/>
+    </net>
+    <net code="29" name="unconnected-(A1-Pad3)">
+      <node ref="A1" pin="3" pinfunction="~{RESET}" pintype="input"/>
+    </net>
+    <net code="30" name="unconnected-(A1-Pad4)">
+      <node ref="A1" pin="4" pinfunction="3V3" pintype="power_out"/>
+    </net>
+    <net code="31" name="unconnected-(A1-Pad5)">
+      <node ref="A1" pin="5" pinfunction="+5V" pintype="power_out"/>
+    </net>
+    <net code="32" name="unconnected-(A1-Pad6)">
+      <node ref="A1" pin="6" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="33" name="unconnected-(A1-Pad9)">
+      <node ref="A1" pin="9" pinfunction="A0" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="unconnected-(A1-Pad10)">
+      <node ref="A1" pin="10" pinfunction="A1" pintype="bidirectional"/>
+    </net>
+    <net code="35" name="unconnected-(A1-Pad11)">
+      <node ref="A1" pin="11" pinfunction="A2" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="unconnected-(A1-Pad12)">
+      <node ref="A1" pin="12" pinfunction="A3" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="unconnected-(A1-Pad13)">
+      <node ref="A1" pin="13" pinfunction="SDA/A4" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="unconnected-(A1-Pad14)">
+      <node ref="A1" pin="14" pinfunction="SCL/A5" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="unconnected-(A1-Pad15)">
+      <node ref="A1" pin="15" pinfunction="D0/RX" pintype="bidirectional"/>
+    </net>
+    <net code="40" name="unconnected-(A1-Pad16)">
+      <node ref="A1" pin="16" pinfunction="D1/TX" pintype="bidirectional"/>
+    </net>
+    <net code="41" name="unconnected-(A1-Pad17)">
+      <node ref="A1" pin="17" pinfunction="D2" pintype="bidirectional"/>
+    </net>
+    <net code="42" name="unconnected-(A1-Pad18)">
+      <node ref="A1" pin="18" pinfunction="D3" pintype="bidirectional"/>
+    </net>
+    <net code="43" name="unconnected-(A1-Pad23)">
+      <node ref="A1" pin="23" pinfunction="D8" pintype="bidirectional"/>
+    </net>
+    <net code="44" name="unconnected-(A1-Pad25)">
+      <node ref="A1" pin="25" pinfunction="D10" pintype="bidirectional"/>
+    </net>
+    <net code="45" name="unconnected-(A1-Pad26)">
+      <node ref="A1" pin="26" pinfunction="D11" pintype="bidirectional"/>
+    </net>
+    <net code="46" name="unconnected-(A1-Pad27)">
+      <node ref="A1" pin="27" pinfunction="D12" pintype="bidirectional"/>
+    </net>
+    <net code="47" name="unconnected-(A1-Pad28)">
+      <node ref="A1" pin="28" pinfunction="D13" pintype="bidirectional"/>
+    </net>
+    <net code="48" name="unconnected-(A1-Pad29)">
+      <node ref="A1" pin="29" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="49" name="unconnected-(A1-Pad30)">
+      <node ref="A1" pin="30" pinfunction="AREF" pintype="input"/>
+    </net>
+    <net code="50" name="unconnected-(U1-Pad)">
+      <node ref="U1" pin="" pinfunction="FLT" pintype="input+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U1-Pad)_1">
+      <node ref="U1" pin="" pinfunction="M+" pintype="input+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U1-Pad)_2">
+      <node ref="U1" pin="" pinfunction="M-" pintype="input+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U1-Pad)_3">
+      <node ref="U1" pin="" pinfunction="AS" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U1-Pad)_4">
+      <node ref="U1" pin="" pinfunction="BS" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U2-Pad)">
+      <node ref="U2" pin="" pinfunction="VIN" pintype="input+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U2-Pad)_1">
+      <node ref="U2" pin="" pinfunction="AI1" pintype="output+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(U2-Pad)_2">
+      <node ref="U2" pin="" pinfunction="AI2" pintype="output+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(U2-Pad)_3">
+      <node ref="U2" pin="" pinfunction="GI1" pintype="output+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(U2-Pad)_4">
+      <node ref="U2" pin="" pinfunction="GI2" pintype="output+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(U2-Pad)_5">
+      <node ref="U2" pin="" pinfunction="RST" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>
