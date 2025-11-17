@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<TOPIC>
+	<BTN>
+		<A/>
+		<B/>
+		<X/>
+		<Y/>
+		<UP/>
+		<DOWN/>
+		<LEFT/>
+		<RIGHT/>
+		<L1/>
+		<R1/>
+	</BTN>
+	<AXIS>
+		<JOYL_X>
+			<MIN>-1</MIN>
+			<MAX>1</MAX>
+		</JOYL_X>
+		<JOYL_Y>
+			<MIN>-1</MIN>
+			<MAX>1</MAX>
+		</JOYL_Y>
+		<JOYR_X>
+			<MIN>-1</MIN>
+			<MAX>1</MAX>
+		</JOYR_X>
+		<JOYR_Y>
+			<MIN>-1</MIN>
+			<MAX>1</MAX>
+		</JOYR_Y>
+		<LT>
+			<MIN>-1</MIN>
+			<MAX>1</MAX>
+		</LT>
+		<RT>
+			<MIN>-1</MIN>
+			<MAX>1</MAX>
+		</RT>
+	</AXIS>
+</TOPIC>
